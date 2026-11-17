@@ -1,0 +1,3 @@
+# Three-sentence production limitations statement
+
+This prototype assumes transaction IDs are unique and stable, but real payment systems can have partial settlements, retries, reused references, fees, chargebacks, reversals, and multiple currencies that require more sophisticated matching rules. It uses floating-point numeric values for a lightweight demonstration; production reconciliation should use integer minor units (paise/cents) or decimal arithmetic, plus strict currency and rounding policies. Before production use, it also needs secure data handling, access controls, audit trails, configurable bank formats and cut-off calendars, observability, and human review for ambiguous matches.
